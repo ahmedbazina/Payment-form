@@ -1,0 +1,64 @@
+        /* Background styling */
+html{
+    background: url(../images/mountains.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Century Gothic',sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.paymentbox{
+    width: 350px;
+    height: 590px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.paymentbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.paymentbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.paymentbox input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.paymentbox input[type="submit"]{
+    height: 45px;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.error{
+    visibility: hidden;
+    color: red;
+    font-size: 12px;
+    display: block;
+}

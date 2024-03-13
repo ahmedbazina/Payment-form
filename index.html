@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Payment Form</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+        <div class="paymentbox">
+            <h1>Payment Form</h1>
+            <!-- Payment Form -->
+        <form name="paymentForm" id="paymentForm" method="post" onsubmit="return validate(this)">
+            
+            <p>Card Number</p>
+                <span class="error" id="errmsg_cc_number"></span>
+                <input type="text" id="cc_number" value="" name="cc_number" placeholder="•••• •••• •••• ••••" onfocus="focusMsg(this)" onblur="blurMsg(this)"/>
+            
+            <p>Name on card</p> 
+                <span class="error" id="errmsg_cc_name"></span>
+                <input type="text" id="cc_name" name="cc_name" placeholder="J Smith" onfocus="focusMsg(this)" onblur="blurMsg(this)" onkeypress="return lettersOnly(event)"/>
+            
+            <p>Expiration Date</p>
+                <span class="error" id="errmsg_cc_month"></span>    
+                <input type="text" id="cc_month" name="cc_month" maxlength="2" placeholder="MM" onfocus="focusMsg(this)" onblur="blurMsg(this)" onkeypress="return numbersOnly(event)"/>
+                <span class="error" id="errmsg_cc_year"></span>
+                <input type="text" id="cc_year" name="cc_year" maxlength="2" placeholder="YY" onfocus="focusMsg(this)" onblur="blurMsg(this)" onkeypress="return numbersOnly(event)"/>
+            
+            <p>CVV</p>
+                <span class="error" id="errmsg_cc_cvv"></span>
+                <input type="text" id="cc_cvv" name="cc_cvv" maxlength="3" placeholder="•••" onfocus="focusMsg(this)" onblur="blurMsg(this)" onkeypress="return numbersOnly(event)"/>
+            
+            <input type="submit" name="submit" value="Take my Money">
+        </form>
+            </div>                      <!-- Javascript -->
+        <script src="js/script.js"></script> 
+	</body>
+</html>
+
