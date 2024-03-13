@@ -1,11 +1,12 @@
         /* Background styling */
 html{
-    background: url(../images/mountains.jpeg) no-repeat;
+    background: url(../images/money1.avif) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     font-family: 'Century Gothic',sans-serif;
+    background-color: #161d27;
 }
 body{
     margin: 0;
